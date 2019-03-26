@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<botdetect xmlns="https://captcha.com/schema/java"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="https://captcha.com/schema/java https://captcha.com/schema/java/botdetect-4.0.beta3.5.xsd">
+
+    <baseUrl>http://localhost:9000</baseUrl>
+    <servletRequestPath>/botDetectCaptcha</servletRequestPath>
+    <errorLoggingEnabled>true</errorLoggingEnabled>
+
+    <captchaStyles>
+        <captchaStyle>
+            <name>captchaCode</name>
+            <userInputID>captchaCode</userInputID>
+
+            <locale>en-US</locale>
+            <codeLength>4-5</codeLength>
+            <codeStyle>NUMERIC</codeStyle>
+
+            <soundEnabled>true</soundEnabled>
+            <soundFormat>WAV_PCM_8BIT_8KHZ_MONO</soundFormat>
+
+            <imageFormat>JPEG</imageFormat>
+
+            <imageWidth>250</imageWidth>
+            <imageHeight>60</imageHeight>
+        </captchaStyle>
+    </captchaStyles>
+
+</botdetect>
